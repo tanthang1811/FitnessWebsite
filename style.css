@@ -1,0 +1,195 @@
+#full-lading-page{
+    background-image: url(img/cool-backgroudn-pic/join-hands.jpg);
+    background-position: bottom;
+    background-size: cover;
+    height: calc(100vh - 150px);
+    position: relative;
+    margin-top: 70px;
+}
+
+.registration-form{
+    background-color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    box-shadow: 0px 4px 10px 3px #000;
+    border-radius: 20px;
+    border: 2px solid #6dd5ed;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    top: 95%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.registration-form button{
+    padding: 10px;
+    border-radius: 20px;
+    background: #FFF;
+    color: #6dd5ed;
+    border: 1px solid #6dd5ed;
+    transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1) 0s;
+    width: 200px;
+}
+
+.registration-form button:hover{
+    background: #6dd5ed;
+    color: #FFF;
+    border: 1px solid #FFF;
+}
+
+.navbar{
+    background: #FFF;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+}
+
+.nav-link{
+    color: #000 !important;
+    font-weight: 600;
+    transition: all 0.3s linear 0s;
+}
+
+.nav-link::before{
+    content: "";
+    height: 5px;
+    width: 0%;
+    background: #6dd5ed;
+    display: block;
+    transition: all 0.3s linear 0s;
+}
+
+.nav-link:hover{
+    color: #6dd5ed !important;
+}
+
+.nav-link:hover::before{
+    width: 100%;
+}
+
+.navbar-brand img{
+    width: 100px;
+}
+
+.sport-pic img{
+    width: 100%;
+}
+
+.section-auto-margin{
+    margin-top: 100px;
+}
+
+.sport-pic:first-child, .sport-content:first-child{
+    margin-bottom: 50px;
+}
+
+.sport-pic img{
+    border-radius: 20px;
+}
+
+.section-header{
+    margin-bottom: 20px;
+}
+
+.mr-3 img{
+    width: 100px;
+    border-radius: 50%;
+}
+
+.service-item{
+    transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
+    border-radius: 20px;
+}
+
+.service-item:hover{
+    color: #FFF;
+    background: #6dd5ed;
+    transform: translateY(-5px);
+    box-shadow: 0px 5px 15px 0px #000;
+}
+
+.feature-content-icon{
+    font-size: 40px;
+}
+
+.testi-item{
+    border-left: 5px solid #6dd5ed;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+#contact-us{
+    background: #F2F2F2;
+    padding-top: 100px;
+    margin-top: 150px;
+    position: relative;
+}
+
+.email-form{
+    width: 900px;
+    margin: 0 auto;
+    position: absolute;
+    top: -30%;
+    left: 12%;
+    background-color: #6dd5ed;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.email-form h2{
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.email-form h1{
+    font-size: 20px;
+}
+
+.email-form input{
+    padding: 10px;
+    border-radius: 20px;
+    width: 100%;
+    outline: none;
+}
+
+.email-form button{
+    padding: 10px;
+    border-radius: 20px;
+    background: #FFF;
+    color: #6dd5ed;
+    border: 1px solid #6dd5ed;
+    transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1) 0s;
+    width: 200px;
+}
+
+.email-form button:hover{
+    background: #6dd5ed;
+    color: #FFF;
+    border: 1px solid #FFF;
+}
+
+@media (min-width: 768px) and (max-width: 1024px){
+    .email-form{
+        top: -20%;
+        left: 3%;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 480px){
+    .email-form{
+        width: 100%;
+        
+        top: -15%;
+        left: 0%;
+        
+    }
+    .section-auto-margin{
+        margin-top: 20px;
+    }    
+    .section-header:first-child{
+        margin-top: 150px;
+    }
+
+}
